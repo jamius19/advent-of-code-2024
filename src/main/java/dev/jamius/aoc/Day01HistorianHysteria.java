@@ -4,7 +4,7 @@ record Day01Input(int[] list1, int[] list2) {
 }
 
 public class Day01HistorianHysteria {
-    public static int similarityScore(Day01Input input) throws Exception {
+    public static int partTwo(Day01Input input) {
         sort(input.list1());
         sort(input.list2());
 

@@ -8,7 +8,7 @@ public class Day03MullItOver {
     private static final Pattern PATTERN = Pattern.compile("mul\\((\\d+),(\\d+)\\)");
     private static final Pattern PATTERN_CONDITIONAL = Pattern.compile("mul\\((\\d+),(\\d+)\\)|(don)|(do)");
 
-    public static int getMulValue(String input) {
+    public static int partOne(String input) {
         Matcher m = PATTERN.matcher(input);
         var total = 0;
 
@@ -22,7 +22,7 @@ public class Day03MullItOver {
         return total;
     }
 
-    public static int getConditionalMulValue(String input) {
+    public static int partTwo(String input) {
         Matcher m = PATTERN_CONDITIONAL.matcher(input);
         var total = 0;
 

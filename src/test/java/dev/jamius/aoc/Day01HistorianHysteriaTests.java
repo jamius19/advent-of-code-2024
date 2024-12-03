@@ -4,12 +4,8 @@ import org.junit.jupiter.api.Test;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
-import java.util.Arrays;
-import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.List;
-
-import static org.assertj.core.api.Assertions.assertThat;
 
 public class Day01HistorianHysteriaTests {
     static String INPUT_PATH = "/input/day1.txt";
@@ -35,9 +31,9 @@ public class Day01HistorianHysteriaTests {
     }
 
     @Test
-    public void validReportPart01() throws Exception {
+    public void validPartTwo() throws Exception {
         var inputs = getInput();
-        var similarityScore = Day01HistorianHysteria.similarityScore(inputs);
+        var similarityScore = Day01HistorianHysteria.partTwo(inputs);
 
         System.out.println(similarityScore);
     }

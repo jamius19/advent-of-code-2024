@@ -32,12 +32,12 @@ public class Day02RedNosedReportsTests {
     }
 
     @Test
-    public void validReportPart01() throws Exception {
+    public void testPartOne() throws Exception {
         var inputs = getInput();
         var validCount = 0;
 
         for(var report: inputs) {
-            var valid = Day02RedNosedReports.isValidReportPartOne(report);
+            var valid = Day02RedNosedReports.partOne(report);
             if (valid) {
                 validCount++;
             }
@@ -47,12 +47,12 @@ public class Day02RedNosedReportsTests {
     }
 
     @Test
-    public void validReportPart02() throws Exception {
+    public void testPartTwo() throws Exception {
         var inputs = getInput();
         var validCount = 0;
 
         for(var report: inputs) {
-            var valid = Day02RedNosedReports.isValidReportPartTwo(report);
+            var valid = Day02RedNosedReports.partTwo(report);
             if (valid) {
                 validCount++;
             }
@@ -62,7 +62,7 @@ public class Day02RedNosedReportsTests {
     }
 
     @Test
-    public void validateSpecificReports() {
+    public void testSpecificCase() {
         var validCount = 0;
 
         var inputs = new HashMap<int[], Boolean>();
@@ -74,7 +74,7 @@ public class Day02RedNosedReportsTests {
         inputs.put(new int[]{8, 6, 4, 4, 1}, true);
 
         for(var report: inputs.entrySet()) {
-            var valid = Day02RedNosedReports.isValidReportPartTwo(report.getKey());
+            var valid = Day02RedNosedReports.partTwo(report.getKey());
             assertThat(valid == report.getValue()).isTrue();
 
             if (valid) {

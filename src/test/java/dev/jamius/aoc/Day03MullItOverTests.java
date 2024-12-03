@@ -23,17 +23,17 @@ public class Day03MullItOverTests {
     }
 
     @Test
-    public void getMulValue() throws Exception {
+    public void testPartOne() throws Exception {
         var input = getInput();
-        var mul = Day03MullItOver.getMulValue(input);
+        var mul = Day03MullItOver.partOne(input);
 
         System.out.println(mul);
     }
 
     @Test
-    public void getConditionalMulValue() throws Exception {
+    public void testPartTwo() throws Exception {
         var input = getInput();
-        var mul = Day03MullItOver.getConditionalMulValue(input);
+        var mul = Day03MullItOver.partTwo(input);
 
         System.out.println(mul);
     }

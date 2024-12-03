@@ -2,7 +2,7 @@ package dev.jamius.aoc;
 
 public class Day02RedNosedReports {
 
-    public static boolean isValidReportPartOne(int[] report) {
+    public static boolean partOne(int[] report) {
         int direction = report[0] - report[1];
 
         for (int i = 0; i < report.length - 1; i++) {
@@ -19,7 +19,7 @@ public class Day02RedNosedReports {
         return true;
     }
 
-    public static boolean isValidReportPartTwo(int[] report) {
+    public static boolean partTwo(int[] report) {
         var validityScore = getReportValidity(report, true);
         return validityScore == 1;
     }
